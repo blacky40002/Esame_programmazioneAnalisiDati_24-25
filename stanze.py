@@ -150,7 +150,7 @@ class Doppia(Stanza):
         if not isinstance(other, Doppia):
             return False
         return super().__eq__(other)
-    
-def get_tipo_stanza(self):
+
+    def get_tipo_stanza(self):
         return super().get_tipo_stanza()
 

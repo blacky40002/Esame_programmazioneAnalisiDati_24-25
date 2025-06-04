@@ -97,8 +97,8 @@ class Hotel:
         if numero_stanza not in self.stanze:
             raise KeyError("La stanza non è presente nell'hotel")
         for prenotazione in list(self.prenotazioni.values()):
-            if prenotazione.get_numero_stanza() == numero_stanza:
-                del self.prenotazioni[prenotazione.get_id()]
+            if prenotazione.numero_stanza == numero_stanza:
+                del self.prenotazioni[prenotazione.id_prenotazione]
 
         del self.stanze[numero_stanza]
 

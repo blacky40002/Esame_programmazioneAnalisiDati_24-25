@@ -9,7 +9,7 @@ Come procedere:
 (2) realizzare (nei file classi.py stanze.py e hotel.py) i metodi richiesti seguendo le indicazioni
     dei commenti in corrispondenza di ciascun metodo e testarli opportunamente.
 (3) eseguire i test nel file main.py fornito dai docenti (senza modificarlo)
-    per effettuare questo test i file main.py, testMy.py, e i file .py implemntati
+    per effettuare questo test i file main.py, testMy.py, e i file .py implementati
     si devono trovare nella stessa cartella.
 (4) realizzare (nel file gui.py) la GUI come specificato nel file di istruzioni (oltre a questo README)
     e testarla opportunamente.
