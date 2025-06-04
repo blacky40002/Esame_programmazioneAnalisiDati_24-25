@@ -83,6 +83,7 @@ class Data:
     def __str__(self):
     # Ritorna la stringa "giorno/mese"
             return f"{self._giorno}/{self._mese}"
+    @classmethod
     def from_string(cls, s: str):
         """
         Crea e restituisce un oggetto Data a partire da una stringa "giorno/mese".
@@ -96,7 +97,7 @@ class Data:
     
 """
 Definire una classe Prenotazione per rappresentare una prenotazione di una stanza di un hotel.
-Le pronotazioni saranno solo all'interno dello stesso anno solare. Ad esempio, non è possibile avere come data di arrivo il 27/12 e come data di partenza il 5/1.
+Le prenotazioni saranno solo all'interno dello stesso anno solare. Ad esempio, non è possibile avere come data di arrivo il 27/12 e come data di partenza il 5/1.
 #STATO:
 - id_prenotazione: intero non negativo.
 - numero_stanza: intero positivo.

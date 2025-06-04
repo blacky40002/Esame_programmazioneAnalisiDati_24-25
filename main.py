@@ -32,6 +32,7 @@ def controllo():
     risultati.append(testEqual(d2-d1, 31))
     risultati.append(testEqual(d1-d2, d2-d1))
     risultati.append(testEqual(str(d2), "1/2"))
+    risultati.append(testEqual(Data.from_string("5/2"), Data(5,2)))
 
     ### Test su Prenotazione
     # test creazione prenotazioni
@@ -130,7 +131,7 @@ def controllo():
     risultati.append(testEqual(x.prezzo_prenotazione(5), 9920))
     
     # test eq, str, salva, carica
-    # test da 46 a 49
+    # test da 46 a 50
     risultati.append(testEqual(x, x))
     risultati.append(testEqual(str(x),"Hotel: 4 stanze (100, 101, 102, 103), 4 prenotazioni."))
     x.salva("hotel.txt")
@@ -157,7 +158,7 @@ def controllo():
 risultati = controllo()
 
 # abbiamo finito ?
-if all(risultati) and len(risultati) == 49:
+if all(risultati) and len(risultati) == 50:
     print("\t****Test completati -- effettuare la consegna come da README")
 else:
     testFalliti = [i+1 for i, x in enumerate(risultati) if not x]
